@@ -16,7 +16,7 @@ class DatastreamID(Schema):
 
 
 class DatastreamFields(Schema):
-    name: Union[UUID, str]
+    name: str
     description: str
     observation_type: str = Field(..., alias='observationType')
     sampled_medium: str = Field(..., alias='sampledMedium')
